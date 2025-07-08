@@ -2,7 +2,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import resume from "../assets/resume.pdf"; // Adjust the path as necessary
 
 const Resume = () => {
   return (
@@ -14,8 +13,8 @@ const Resume = () => {
         <h3 className="text-3xl font-bold mb-6">Resume</h3>
         <p className="mb-6">Download my resume for detailed insights into my work and projects.</p>
         <a
-          // href="../assets/resume.pdf"
-          href={resume}
+          href="../assets/resume.pdf"
+          // href={resume}
 
           download
           className="px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-gray-300 transition duration-300 inline-flex items-center"
