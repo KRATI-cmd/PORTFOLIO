@@ -1,15 +1,19 @@
 import React from "react";
+import churnImg from "../assets/churn.jpg";
+import hrmsImg from "../assets/hrms.jpg";
 
 const projects = [
   {
     title: "HRMS ",
     description: "This project enables us to create a software that streamlines various HR processes within an organization.",
-    image: "/assets/hrms.jpg",
+    image: hrmsImg,
   },
   {
     title: "Churn Prediction",
     description: "Implemented a  ml model to predict customer will exit or not using deep learning algorithm, achieving high accuracy",
-    image: "/assets/churn.jpg",
+    // image: "/assets/churn.jpg",
+    image: churnImg, // ✅ Just this
+
   },
 ];
 
@@ -31,7 +35,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="rounded-lg w-full h-40 object-cover mb-4"
+                className="rounded-lg w-full h-60 object-cover mb-4"
               />
               <h4 className="text-xl font-semibold">{project.title}</h4>
               <p className="mt-2">{project.description}</p>
